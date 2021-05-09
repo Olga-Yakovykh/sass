@@ -1,0 +1,12 @@
+$main-color: #313030;
+$hover-color: #ff3f40;
+$fz: 15px;
+$lh: 1.8;
+
+%style-title {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
