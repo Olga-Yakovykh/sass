@@ -1,52 +1,315 @@
-main .some-text {
-    padding-top: 30px;
-     
-    h1 {
-        font-size: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 30px;
-    }
-    a{
-        text-decoration: none;
-        color: $hover-color;
+main {
+    font-family: Open sans-serif;
+    .wrapper-main-container {
+        background:  #f6f2f2;
     }
 
+    .container-info {
+        display: flex;
+        padding-top: 110px;
+        padding-bottom: 106px;
+
+        div {
+            width: 50%;
+        }
+        h1 {
+            font-size: 60px;
+            color: $main-color;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-bottom: 30px;
+            line-height: 1.2;
+            
+        }
+
+        p {
+            font-size: $main-fz;
+            color: $main-color;
+            line-height: 1.8;
+            padding:0 183px 59px 0;
+        }
+        a {
+            @include button ($color-fon, $hover-color);
+            @extend %btn;
+        }
+        a:hover {
+            @include button ($hover-color, $color-fon)
+        }
+        .wrapper-video iframe {
+            box-shadow: -2px -4px 50px 0px #000000;
+        }
+    }
+
+    .main-services {
+        padding: 106px 0 0 0;
+        border-bottom: 3px solid #f6f2f2;
+
+        .wrapper-provide {
+            display: flex;
+
+            div {
+                width: 50%;
+            }
+
+            h2 {
+                font-size: 42px;
+                color: $main-color;
+                text-transform: uppercase;
+                text-decoration: 1px solid underline;
+                font-weight: bold;
+                padding-bottom: 48px;
+                line-height: 1.2;
+            }
+            h3 {
+                font-size: 24px;
+                color: $main-color;
+            }
+
+            p{
+                font-size: $main-fz;
+                color: $main-color;
+                line-height: 1.5;
+                padding: 23px 48px 55px 0;
+            }
+
+            a{
+                @include button ($hover-color, $color-fon);
+                @extend %btn;
+            }
+            a:hover {
+                @include button ($color-fon, $hover-color);
+            }
+        }
+        .wrapper-items {
+            display: flex;
+            flex-wrap: wrap;
+           img {
+                   padding-bottom: 30px;
+               } 
+        }
+    }
+
+
+    .container-products {
+
+    .wrapper-products {
+
+    .title-wrapper{
+        text-align: center;
+        padding-top: 83px ;
+        
+    
+    h3 {
+        font-size: 42px;
+        color: $main-color;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+    }
     p {
-        @include article ($fz, pink, $lh );
+        padding-bottom: 30px;
+        font-size: $main-fz;
+        color: $main-color;
+        max-width: 37%;
+        margin: 0 auto;
+
+        }
+        .line-bottom {
+            width: 9%;
+            border-top: 2px solid $hover-color;
+
+        }
     }
 }
+  
+   .wrapper-menu {
+       padding-top: 59px;
 
-main .text-about {
-    h1 {
-        font-size: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 30px;
-    }
+        ul {
+           display: flex;
+           justify-content: center;
 
-    a{
-        text-decoration: none;
-        color: $hover-color;
+           li {
+               font-size: 22px;
+               text-transform: uppercase;
+
+               a {
+                text-decoration: none;
+                color: $main-color;
+               }
+               a:hover {
+                   color: $hover-color;
+               }
+           }
+        li:not(:last-child) {
+            padding-right: 53px;
+        }
+       }
+      
+   }
+   .gallery-wrapper {
+       padding: 66px 0 136px 0;
+       display: flex;
+       flex-wrap: wrap;
+       font-size: 0;
+       justify-content: center;
+       
+       
+   }
+   .gallery-wrapper div{
+       padding:0 20px 20px 0;
+       width: calc(25% - 20px);
+   }
+}
+
+.wrapper-about-us{   
+
+    h2 {
+        font-size: 42px;
+        color: $main-color;
+        text-transform: uppercase;
+        padding-bottom: 39px;
     }
     p {
-        @include article ($fz, orange, $lh );
+        font-size: $main-fz;
+        color: $main-color;
+        padding-bottom: 33px;
+        max-width: 33%;
+        line-height: 1.5;
     }
+    .line-bottom {
+        border-top: 2px solid $hover-color;
+        width: 9%;
+        padding-bottom: 35px;
     }
 
-    main .main-text {
-        h1 {
-        @extend %style-title;
+.wrapper-teem {
+        display: flex;
+        padding-bottom: 110px;
+
+ .wrapper-teem-pfoto {
+            padding-right: 74px;
+            display: flex;
+            max-width: 25%;
+        }
+    
+    .galery-pfoto {
+        max-width: 75%;    
+        font-size: 0;
+
+        h3 {
+            font-size: 30px;
+            color: $main-color;
+            text-transform: uppercase;
+            padding-bottom: 35px;
+        }
+        p {
+            font-size: $main-fz;
+            color: $main-color;
+            padding-bottom: 49px;
+            max-width: 65%;
         }
 
-        a{
-            text-decoration: none;
-            color: $hover-color;
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                padding-bottom: 68px;}
+
+            li:not(:last-child){
+                padding-right: 30px;
+            }    
+
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: $main-color;
+                    font-style: italic;
+                }
+        }
+        .wrapper-photo {
+            display: flex;
+            div {
+                position: relative;
+                display: flex;
+                width: calc(100%/ 4 - 20px);
+                padding-right: 20px;
+               
+        
+           span{
+                position: absolute;
+                display: none;
+                color: $color-fon;
+                padding: 37px 197px 0 0;
+                background: #7a776e;
+                bottom: 0;
+                z-index: 1;
+                }
+
+            span::before {
+                content: "Sokina Jue";
+                color: $color-fon;
+                height: 100%;
+                width: 100%;
+                z-index: 2;
+            }
         }
 
-        p{
-            @include article ($fz, green, $lh);
-        }
+            div:hover span {
+            display: block;
+            }
+            
     }
+    }
+}
+}
+
+.wrapper-forma {
+    padding: 139px 0 135px 0;
+    background: #f5f0dd;
+
+    .wrapper-text {
+        padding-bottom: 64px;
+        text-align: center;
+    }
+.wrapper-button {
+    h2 {
+        font-size: 42px;
+        color: $color-fon;
+        padding-bottom: 39px;
+    }
+    p{
+        font-size: $main-fz;
+        color: $color-fon;
+    }
+    .wrapper-button{
+        display: flex;
+        justify-content: center;
+    .email {
+        width: 520px;
+        height: 76px;
+        background: $color-fon;
+        border-radius: 8px;
+        border: #f5f0dd;
+    }
+    .submit {
+        @include button ($hover-color, $color-fon);
+        width: 211px;
+        height: 76px;
+        border-radius: 8px;
+        border: 1px solid $hover-color;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+    .submit:hover {
+        @include button ($color-fon, $hover-color);
+        border-radius: 1px solid $hover-color;
+    }
+    [placeholder] {
+        padding-left: 20px;
+    }
+}
+}
+}
+}

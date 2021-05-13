@@ -1,5 +1,4 @@
-@mixin article ($fz, $main-color, $lh ) {
-    font-size: $fz;
-    color: $main-color;
-    line-height: $lh;
+@mixin button ($color-fon, $hover-color) {
+    background: $color-fon;
+    color: $hover-color;
 }

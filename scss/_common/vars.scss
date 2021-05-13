@@ -1,12 +1,16 @@
-$main-color: #313030;
+$main-color: #000000;
 $hover-color: #ff3f40;
-$fz: 15px;
-$lh: 1.8;
+$color-fon: #ffffff;
+$main-fz: 16px;
+$fz-btn:18px;
 
-%style-title {
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 30px;
+%btn {
+    text-decoration: none;
+    padding: 23px 105px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: 1px solid $hover-color;
+    font-size: $fz-btn;
 }
+
+
